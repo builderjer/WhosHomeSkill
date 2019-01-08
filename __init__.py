@@ -12,7 +12,7 @@ class WhosHome(MycroftSkill):
         super(WhosHome, self).__init__(name="WhosHome")
         self.people = []
         
-    @intent_handler(IntentBuilder("WhosHomeIntent").require("WhosKeyword").require("HomeKeyword")
+    @intent_handler(IntentBuilder("WhosHomeIntent").require("WhosKeyword").require("HomeKeyword"))
     def handle_whos_home_intent(self, message):
         self.speak_dialog("I am home")
         
