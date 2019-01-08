@@ -17,3 +17,6 @@ class WhosHome(MycroftSkill):
         self.speak_dialog("I am home")
         
         
+def create_skill():
+    return WhosHome()
+        
