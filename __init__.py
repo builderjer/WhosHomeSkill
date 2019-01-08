@@ -18,7 +18,7 @@ class WhosHome(MycroftSkill):
         LOGGER.info(p)
         if ping("192.168.0.20"):
             name = "Jeremy"
-            self.speak_dialog("home")
+            self.speak_dialog("home", name)
         else:
             self.speak_dialog("Nobody")
         #self.speak_dialog("I am home")
