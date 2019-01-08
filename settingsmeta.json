@@ -1,0 +1,26 @@
+{
+    "name": "Who's Home Skill",
+    "skillMetadata": {
+        "sections": [
+            {
+                "name": "People",
+                "fields": [
+                    {
+                        "name": "person",
+                        "type": "text",
+                        "label": "Person",
+                        "value": "",
+                        "placeholder": "Name of person to detect",
+                    },
+                    {
+                        "name": "ipadd",
+                        "type": "text",
+                        "label": "IP Address",
+                        "value": "",
+                        "placeholder": "IP Address",
+                    }
+                ]
+            },
+        ]
+    }
+}
