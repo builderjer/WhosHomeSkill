@@ -10,17 +10,17 @@
                         "type": "text",
                         "label": "Person",
                         "value": "",
-                        "placeholder": "Name of person to detect",
+                        "placeholder": "Name of person to detect"
                     },
                     {
                         "name": "ipadd",
                         "type": "text",
                         "label": "IP Address",
                         "value": "",
-                        "placeholder": "IP Address",
+                        "placeholder": "IP Address"
                     }
                 ]
-            },
+            }
         ]
     }
 }
