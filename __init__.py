@@ -14,7 +14,7 @@ class WhosHome(MycroftSkill):
         
     @intent_handler(IntentBuilder("WhosHomeIntent").require("WhosKeyword").require("HomeKeyword"))
     def handle_whos_home_intent(self, message):
-        p = self.settings.get("people")
+        p = self.settings
         LOGGER.info(p)
         #p = self.settings.get("person")
         #if ping("192.168.0.20"):
