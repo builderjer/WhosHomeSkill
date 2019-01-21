@@ -11,11 +11,13 @@ class WhosHome(MycroftSkill):
     def __init__(self):
         super(WhosHome, self).__init__(name="WhosHome")
         self.people = []
+        LOGGER.info("starting whos home")
         
     @intent_handler(IntentBuilder("WhosHomeIntent").require("WhosKeyword").require("HomeKeyword"))
     def handle_whos_home_intent(self, message):
-        p = self.settings
+        p = self.settings.get("people")
         LOGGER.info(p)
+        
         #p = self.settings.get("person")
         #if ping("192.168.0.20"):
             #people = {"name": "Jeremy, Melissa"}
